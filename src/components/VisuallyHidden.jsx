@@ -12,7 +12,7 @@ function VisuallyHidden({ children }) {
     border: 0,
   };
 
-  return <span style={hiddenStyles}>{children}</span>;
+  return <h1 style={hiddenStyles}>{children}</h1>;
 }
 
 export default VisuallyHidden;

@@ -1,1 +1,38 @@
 @import "./normalize.css";
+
+:root {
+  /* Primary */
+
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+
+  /* Neutral */
+
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+
+  /* Font Family */
+  --ff-base: "Manrope", sans-serif;
+
+  /* Font Sizes */
+
+  /* 11px to 13px */
+  --fs-300: clamp(0.6875rem, 0.5797rem + 0.4598vw, 0.8125rem);
+  /* 24px to 28px */
+  --fs-500: clamp(1.5rem, 1.2845rem + 0.9195vw, 1.75rem);
+
+  /* Border radius */
+  --br: 0.938rem;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--DarkBlue);
+  font-family: var(--ff-base);
+  color: var(--LightCyan);
+}
