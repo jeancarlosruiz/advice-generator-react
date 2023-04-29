@@ -1,6 +1,6 @@
-@import "./styles/index.css";
+@import "../styles/index.css";
 
-.main {
+.wrapper {
   width: min(calc(100% - 2rem), 33.75rem);
   margin-inline: auto;
   background-color: var(--DarkGrayishBlue);
@@ -27,6 +27,7 @@
 .advice {
   font-size: var(--fs-500);
   letter-spacing: -0.016rem;
+  line-height: 1.37;
 }
 
 .diceBtn {
@@ -35,7 +36,7 @@
   border-radius: 50%;
   border: transparent;
   position: absolute;
-  top: 90%;
+  top: 86%;
   background-color: var(--NeonGreen);
   transition: 0.15s box-shadow ease-in;
   cursor: pointer;
