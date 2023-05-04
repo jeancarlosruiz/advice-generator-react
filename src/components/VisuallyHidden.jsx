@@ -1,4 +1,7 @@
 import React from "react";
+
+// Source: https://www.joyofreact.com
+
 function VisuallyHidden({ children }) {
   const hiddenStyles = {
     display: "inline-block",

@@ -1,90 +1,58 @@
-# Website Starter Template React
+# Frontend Mentor - Advice generator app solution
+
+This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Components](#components)
-  - [Visually Hidden](#visually-hidden)
-  - [Range Utility](#range-utility)
-- [Acknowledgments](#acknowledgments)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-## Components
+## Overview
 
-### Visually Hidden
+### The challenge
 
-#### What's a screen reader?
+Users should be able to:
 
-A screen reader is a piece of software that parses the DOM and reads its contents aloud, using a synthetic voice. It's a vital tool used by folks who have poor or no vision (although screen readers are more broadly used by all sorts of people, including those who have dyslexia or other reading disorders).
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Generate a new piece of advice by clicking the dice icon
 
-#### Code:
+### Screenshot
 
-These styles will make sure the component is not visible, but will still be announced by screen readers.
+![](./design/mobile.png)
+![](./design/desktop.png)
+![](./design/performance.jpeg)
 
-Adding “display: none” would hide the element from ALL users, including those using screen-readers.
+### Links
 
-Source: https://www.joyofreact.com
-Section: Supporting screen readers exercises
+- Solution URL: [Click here](https://github.com/jeancarlosruiz/advice-generator-react)
+- Live Site URL: [Click here](https://advice-generator-live.netlify.app/)
 
-```js
-const hiddenStyles = {
-  display: "inline-block",
-  position: "absolute",
-  overflow: "hidden",
-  clip: "rect(0 0 0 0)",
-  height: 1,
-  width: 1,
-  margin: -1,
-  padding: 0,
-  border: 0,
-};
-```
+## My process
 
-### Range Utility
+### Built with
 
-Range is a utility function. It's not part of the JavaScript language (unfortunately), but it is a staple of utility libraries like lodash.
+- Semantic HTML5 markup
+- CSS custom properties and CSS modules
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
 
-Range(n) will produce an array from 0 to n, where n is the supplied rating.
+### Useful resources
 
-#### Code:
+- [Carlos Azaustre](https://www.youtube.com/watch?v=6u1RHUoXIPI&t=642s)
 
-```js
-const range = (start, end, step = 1) => {
-  let output = [];
+- [MiduDev](https://www.youtube.com/watch?v=qkzcjwnueLA)
 
-  if (typeof end === "undefined") {
-    end = start;
-    start = 0;
-  }
+## Author
 
-  for (let i = start; i < end; i += step) {
-    output.push(i);
-  }
-
-  return output;
-};
-```
-
-range(2);
-Create an array from 0 (inclusive) to 2 (exclusive):
-Produces: [0, 1]
-
-range(5);
-Create an array from 0 (inclusive) to 5 (exclusive):
-Produces: [0, 1, 2, 3, 4]
-
-range(2, 6);
-Create an array from 2 (inclusive) to 6 (exclusive):
-Produces: [2, 3, 4, 5]
-
-range(2, 10, 2);
-Create an array from 2 to 10, picking every 2nd number
-Produces: [2, 4, 6, 8]
-
-Source: https://www.joyofreact.com
-Section: Range Utility
-
-## Acknowledgments
-
-More than grateful to these amazing people who have been helping me throughout this process and building my template based on their references:
-
-- [Josh W Comeau](https://www.joyofreact.com/)
-- [Desarrollo Útil](https://www.youtube.com/@DesarrolloUtil)
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)

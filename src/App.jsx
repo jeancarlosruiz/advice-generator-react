@@ -8,7 +8,6 @@ function App() {
   const [advice, setAdvice] = useState("");
   const [number, setNumber] = useState(117);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
 
   const createRandomNum = () => {
     const randomNum = Math.floor(Math.random() * 150) + 1;
@@ -22,8 +21,8 @@ function App() {
         const { slip } = data;
         setAdvice(slip);
       })
-      .catch((error) => {
-        setError(error);
+      .catch((err) => {
+        console.error(err);
       })
       .finally(() => setLoading(false));
   }, [number]);
@@ -37,7 +36,6 @@ function App() {
       {advice && (
         <AdviceContainer advice={advice} createRandomNum={createRandomNum} />
       )}
-      {error && <h2>{error}</h2>}
     </main>
   );
 }

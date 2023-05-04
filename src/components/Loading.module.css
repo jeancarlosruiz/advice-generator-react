@@ -1,5 +1,7 @@
 @import "../styles/index.css";
 
+/* Source:  https://loading.io/css/*/
+
 .ldsRoller {
   display: inline-block;
   position: relative;
