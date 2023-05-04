@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./adviceContainer.module.css";
-import VisuallyHidden from "./VisuallyHidden";
 
 function AdviceContainer({ advice, createRandomNum }) {
   return (
@@ -33,7 +32,7 @@ function AdviceContainer({ advice, createRandomNum }) {
             fill="#202733"
           />
         </svg>
-        <VisuallyHidden>Dice Button</VisuallyHidden>
+        <span className={styles.visuallyHidden}>Dice Button</span>
       </button>
     </div>
   );

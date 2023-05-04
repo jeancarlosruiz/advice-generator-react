@@ -46,3 +46,13 @@
 :focus {
   box-shadow: 0px 0px 40px var(--NeonGreen);
 }
+
+/* Source: https://www.accessibility-developer-guide.com/examples/hiding-elements/visually/ */
+.visuallyHidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
