@@ -6,6 +6,7 @@ function AdviceContainer({ advice, createRandomNum }) {
     <div className={styles.wrapper}>
       <h2 className={styles.title}>{`Advice #${advice.id}`}</h2>
       <p className={styles.advice}>"{advice.advice}"</p>
+      <p>Tratando de arregla la mrd que hice</p>
 
       <picture>
         <source
